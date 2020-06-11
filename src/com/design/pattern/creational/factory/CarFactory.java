@@ -2,6 +2,7 @@ package com.design.pattern.creational.factory;
 
 public class CarFactory {
 	
+	// Factory pattern end point implementation using interface
 	public static Car getCarDetail(CarType type,String color, String vehicleNumber, Integer topSpeed, Integer tankCapacity, String gearType) {
 		Car car = null;
 		switch(type) {
@@ -17,6 +18,7 @@ public class CarFactory {
 		return car;
 	}
 	
+	// Factory pattern end point implementation using abstract class
 	public static AbstractCar getAbstractCarDetail(CarType type,String color, String vehicleNumber, Integer topSpeed, Integer tankCapacity, String gearType,String stearingType,boolean isMusicSystemAvailable) {
 		AbstractCar abstractCar = null;
 		switch(type) {
