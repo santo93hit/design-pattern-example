@@ -12,11 +12,14 @@ Benefits of Design Pattern :-
 
 Types of Design Pattern :-
 	1.) Creational :- It's deals with how to instantiate an object in the best possible way based on situation.
+	
 	2.) Structural :- It's deals with structure of the class like how to create a complex class using inheritance etc. So, we can get more benefits from those and code should
 	 be more reusable.
+	
 	3.) Behavioral : It's deals with how objects will communicate each others and how to provide loose coupling between them. 
 	
 1.) Creational Design Pattern :-
+
 	a.) Factory Pattern :- It will used when we have multiple subclass for a super class and based on input we need to instantiate object of one of the subclass.
 		  We can implement factory pattern by using abstract class,interface or normal java class. This is one of the most widely used java design pattern. 
 		  Implementation you can see in below path:-
@@ -27,4 +30,4 @@ Types of Design Pattern :-
     	  In this pattern we will not use 'if or switch' block for instantiating object. You can see in below path:- 
     	  https://github.com/santo93hit/design-pattern-example/tree/master/src/com/design/pattern/creational
 	
-	
+	c.) Builder Pattern :- 

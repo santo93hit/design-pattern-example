@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <enumeration id="1" language="java" name="com.design.pattern.DesignPatternImpBasedOn" project="design-pattern-example" 
+    file="/design-pattern-example/src/com/design/pattern/DesignPatternImpBasedOn.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="298" x="141" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="2" language="java" name="com.design.pattern.creational.CreationalDesignPatternHandler" 
+    project="design-pattern-example" 
+    file="/design-pattern-example/src/com/design/pattern/creational/CreationalDesignPatternHandler.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="359" x="479" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.design.pattern.creational.builder.Phone.PhoneBuilder" 
+    project="design-pattern-example" file="/design-pattern-example/src/com/design/pattern/creational/builder/Phone.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="220" x="878" y="276"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.design.pattern.creational.builder.CardBuilder" 
+    project="design-pattern-example" 
+    file="/design-pattern-example/src/com/design/pattern/creational/builder/CardBuilder.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="279" width="245" x="1081" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.design.pattern.creational.builder.Card" project="design-pattern-example" 
+    file="/design-pattern-example/src/com/design/pattern/creational/builder/Card.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="351" width="267" x="1366" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.design.pattern.creational.builder.Phone" project="design-pattern-example" 
+    file="/design-pattern-example/src/com/design/pattern/creational/builder/Phone.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="387" width="163" x="878" y="-151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="7">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
