@@ -27,7 +27,25 @@ Types of Design Pattern :-
 		  
     b.) Abstract factory pattern :- This is similar to factory pattern , it's a factory of factories. In this one for each concrete class we will have factory class along with
     	  this we will have one abstract factory class which will instantiate object of concrete class based on respective factory class of the concrete class. Implementation
-    	  In this pattern we will not use 'if or switch' block for instantiating object. You can see in below path:- 
+    	  In this pattern we will not use 'if or switch' block for instantiating object. Implementation you can see in below path:- 
     	  https://github.com/santo93hit/design-pattern-example/tree/master/src/com/design/pattern/creational
 	
-	c.) Builder Pattern :- 
+	c.) Builder Pattern :- It's introduce to solve problem with Factory and Abstract Factory pattern. There are three major issues with these patterns:-
+	     A.) To many parameter need to pass from client program to factory class due to this we might got some error. Most of the time type of arguments
+	         are same. So, It's hard to maintain the order of arguments.
+	     B.) Some of the parameters is optional, still we need to pass null value for that.
+	     C.) If object is heavy and it's creation is complex, then all that complexity will be part of factory classes that is confusing. And object state will also be inconsistent.
+	   
+	    Builder pattern solve the issues with large number of optional parameters and inconsistent state by providing a way to build the object step-by-step and provide a method
+	    that will actually return the final object. Implementation you can see in below path:- 
+    	https://github.com/santo93hit/design-pattern-example/tree/master/src/com/design/pattern/creational
+    	
+    d.) Prototype Pattern :- It's getting used when object creation is costly, requires lots of time , resource and if you have similar object already existing.
+        It will provide you a mechanism to copy the original object to a new object and then modify it according to your own use cases. It's using java cloning to copy the object.
+        Prototype design pattern mandates that the Object which you are copying should provide the copying feature. It should not be done by any other class. However whether to use 
+        shallow or deep copy of the Object properties depends on the requirements and its a design decision. Implementation you can see in below path:- 
+    	https://github.com/santo93hit/design-pattern-example/tree/master/src/com/design/pattern/creational
+        
+         
+	    
+	       

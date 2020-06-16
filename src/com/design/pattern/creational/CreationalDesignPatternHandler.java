@@ -1,5 +1,7 @@
 package com.design.pattern.creational;
 
+import java.util.Date;
+
 import com.design.pattern.DesignPatternImpBasedOn;
 import com.design.pattern.creational.abstractfactory.CarAbstractFcatoryConsumer;
 import com.design.pattern.creational.abstractfactory.SedanFactory;
@@ -13,6 +15,7 @@ import com.design.pattern.creational.factory.AbstractCar;
 import com.design.pattern.creational.factory.Car;
 import com.design.pattern.creational.factory.CarFactory;
 import com.design.pattern.creational.factory.CarType;
+import com.design.pattern.creational.prototype.BusinessDcoument;
 
 public class CreationalDesignPatternHandler {
 
@@ -36,8 +39,30 @@ public class CreationalDesignPatternHandler {
 
 		showBuilderDesignPattern(DesignPatternImpBasedOn.NONE_BASED);
 		showBuilderDesignPattern(DesignPatternImpBasedOn.INNERCLASS_BASED);
+		
+		System.out.println();
+		System.out.println("Prototype Pattern :- ");
+		System.out.println();
+
+		showPrototypeDesignPattern();
 
 
+	}
+
+	private static void showPrototypeDesignPattern() {
+		BusinessDcoument businessDcoument = new BusinessDcoument("BD10001","purchase_Order.pdf",new Date());
+		System.out.println("Prototype Pattern Before Clone : "+businessDcoument.toString());
+		try {
+			BusinessDcoument cloneBusinessDcoument1 = businessDcoument.clone();
+			cloneBusinessDcoument1.setDocumentKey("BD10002");
+			System.out.println("Prototype Pattern After Clone cloneBusinessDcoument1 :: "+cloneBusinessDcoument1.toString());
+			BusinessDcoument cloBusinessDcoument2 = businessDcoument.clone();
+			cloBusinessDcoument2.setDocumentKey("BD10003");
+			cloBusinessDcoument2.setDocumentName("requirementDocument.pdf");
+			System.out.println("Prototype Pattern After Clone cloneBusinessDcoument2 :: "+cloBusinessDcoument2.toString());
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		} 
 	}
 
 	private static void showFactoryDesignPattern(DesignPatternImpBasedOn designPatternImpBasedOn) {
